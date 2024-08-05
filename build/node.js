@@ -333,6 +333,10 @@ GradientParser.parse = (function() {
             at: defaultPosition
           };
         }
+        var positionAt = matchAtPosition();
+        if (positionAt) {
+          radialType.at = positionAt;
+        }
       }
     }
 
