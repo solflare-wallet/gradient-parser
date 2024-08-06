@@ -335,6 +335,7 @@ GradientParser.parse = (function() {
         }
         var positionAt = matchAtPosition();
         if (positionAt) {
+          radialType.value = { ...radialType.at };
           radialType.at = positionAt;
         }
       }
